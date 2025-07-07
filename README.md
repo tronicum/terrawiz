@@ -1,18 +1,16 @@
-# Tronicum Terrawiz
+## Installation
 
-## How do I install these formulae?
-
-`brew install tronicum/terrawiz/<formula>`
-
-Or `brew tap tronicum/terrawiz` and then `brew install <formula>`.
-
-Or, in a `brew bundle` `Brewfile`:
-
-```ruby
-tap "tronicum/terrawiz"
-brew "<formula>"
+### Via Homebrew (macOS)
+```bash
+brew tap tronicum/terrawiz
+brew install terrawiz
 ```
 
-## Documentation
+### Via npm
+```bash
+# Global installation
+npm install -g terrawiz
 
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+# One-time usage
+npx terrawiz scan github:your-org
+```
