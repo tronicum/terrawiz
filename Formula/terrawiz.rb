@@ -13,7 +13,7 @@ class Terrawiz < Formula
     # Create a wrapper script that points to the correct location
     (bin/"terrawiz").write <<~EOS
       #!/bin/bash
-      exec "#{Formula["node"].opt_bin}/node" "#{libexec}/lib/node_modules/terrawiz/dist/cli.js" "$@"
+      exec "#{Formula["node"].opt_bin}/node" "#{libexec}/lib/node_modules/terrawiz/dist/src/index.js" "$@"
     EOS
     
     # Make it executable
